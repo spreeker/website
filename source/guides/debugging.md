@@ -39,6 +39,8 @@ find out how to acces the console in your browser of choise.
 `console.log(variable)` one can inspect any variable.  variables often used are `this`,
 `context`
 
+## Ember related.
+
 ### Debugging handlebars templates.
 
 Use `{{ log }}` and `{{ debugger }}` in your templates to find out why stuff is
@@ -50,10 +52,12 @@ Views are instances of the views you created in your code. They are not
 singletons you can easily access and thinker with. To get access to a specif
 View you have to look at the DOM tree in your browser.  find the id of the view
 you want to debug and lookup it's id field in `Em.view.views`.  
+
 ```
  <div id="ember667" class=​"ember-view" > 
 ``` 
-Now in the console you can get access to the view instance by `EM.view.views["ember667"]`.
+
+Now in the console you can get access to the view instance by `Em.view.views["ember667"]`.
 
 ### break on error
 
@@ -65,6 +69,8 @@ button in the javascript console purple.
 If you need to find out when a binding get set use `ObeserveBefore` in
 combinations with a `debugger` statement. This way you have a usable stacktrace
 pointing you to the 'cause'.
+
+## Advanced
 
 ### Window.billy
 
@@ -85,11 +91,12 @@ someView = Em.View.extend({
 ## If All Else Fails 
 
 The most anoying kinds of bugs are the ones without a usable callstack or
-complete lack of even an error. 
+complete lack of even an error.  
 
 ### Devide and conquer
 
-This is the last resort to finding the cause of an bug.  The only option left to
+Devide and conquer is the last resort to finding the cause of an bug.  
+The only option left to
 do is to disable more and more of your code until you have singled out the
 malfunction piece of code.
 

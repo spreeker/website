@@ -9,3 +9,5 @@ asynchrony:
 ember-data-lifecycle:
   name: "Ember Data Record Lifecycle"
   hidden: true
+debugging:
+  name: "Ember debugging"
