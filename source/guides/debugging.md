@@ -2,7 +2,7 @@
 
 To improve as a developer, a developer has to become better with the tools the
 he is using. Effective debugging is one of the most important skills to have and
-nuture. Improving your debugging con-fu is what this guide is about.
+nuture. Improving your debugging con-fu with Ember is what this guide is about.
 
 ## General Tips
 
@@ -14,7 +14,7 @@ The most effective debugging skill is to avoid bugs in the fist place:
  * Use [jslint][2] or [jshint][3] while coding. They provide you helpfull guidance and help you avoid
    common pitfalls.
 
-If you have an hour to spare watch [debugging emberjs][1]
+If you have an hour to spare watch [debugging emberjs][1].
 
 ### Read The source
 
@@ -66,7 +66,7 @@ button in the javascript console purple.
 
 ### ObeserveBefore.
 
-If you need to find out when a binding get set use `ObeserveBefore` in
+If you need to find out when a binding is set use `ObeserveBefore` in
 combinations with a `debugger` statement. This way you have a usable stacktrace
 pointing you to the 'cause'.
 
@@ -98,7 +98,7 @@ complete lack of even an error.
 Devide and conquer is the last resort to finding the cause of an bug.  
 The only option left to
 do is to disable more and more of your code until you have singled out the
-malfunction piece of code.
+malfunctioning piece of code.
 
 If you still can't solve it yourself, ask at stackoverflow, irc and finally make
 an issue on github accompanied with a jsFidle so the true js gods will bother to
